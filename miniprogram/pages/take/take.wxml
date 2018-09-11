@@ -1,0 +1,51 @@
+
+ <view class="whole">
+
+
+
+<view class="btnGroup">
+    <block  wx:for="{{numArray}}" wx:key="parameter">
+    <text class='item-btn-one blue {{item.checked?"item-btn-red red":""}}' data-id='{{item.id}}' bindtap='parameterTap'>{{item.name}}</text>
+    </block>
+</view>
+
+    <view class="letf-one-Group">
+       <view class="scoreopview">分数:{{score}}</view>
+       <text  bindtap='oneTap' class='item-btn-one blue {{item.ran ==1?"item-btn-red red":""}}' wx:for="{{num1Array}}" wx:for-index="index" wx:for-item="item" data-id='{{item.nub}}' data-array='{{num1Array}}' data-ran='{{item.ran}}'  data-index="{{index}}" >{{item.nub}}</text>
+    </view>
+
+    <view class="letf-tow-Group">
+    <view class="opview">{{op}}</view>
+     <text  bindtap='oneTaptow' class='item-btn-one blue {{item.ran ==1?"item-btn-red red":""}}' wx:for="{{num2Array}}" wx:for-index="index" wx:for-item="item" data-id='{{item.nub}}' data-ran='{{item.ran}}'  data-index="{{index}}" >{{item.nub}}</text>
+
+    </view>
+    <view class="segview"></view>
+
+
+    <view class="letf-array0-Group">
+       <text  bindtap='oneTaptowArray0' class='item-btn-one blue {{item.ran ==1?"item-btn-red red":""}}' wx:for="{{Array0}}" wx:for-index="index" wx:for-item="item" data-id='{{item.nub}}' data-ran='{{item.ran}}'  data-index="{{index}}" >{{item.nub}}</text>
+    </view>
+
+  
+      <view class="{{array1hide}}">
+      <text  bindtap='oneTaptowArray1' class='item-btn-one blue {{item.ran ==1?"item-btn-red red":""}}' wx:for="{{Array1}}" wx:for-index="index" wx:for-item="item" data-id='{{item.nub}}' data-ran='{{item.ran}}'  data-index="{{index}}" >{{item.nub}}</text>
+    </view>
+
+    <view class="{{array2hide}}">
+      <text  bindtap='oneTaptowArray2' class='item-btn-one blue {{item.ran ==1?"item-btn-red red":""}}' wx:for="{{Array2}}" wx:for-index="index" wx:for-item="item" data-id='{{item.nub}}' data-ran='{{item.ran}}'  data-index="{{index}}" >{{item.nub}}</text>
+    </view>
+
+
+    <view class="{{segviewhide}}">
+     <view class="{{array3hide}}">
+     <text  bindtap='oneTapresult' class='item-btn-one blue {{item.ran ==1?"item-btn-red red":""}}' wx:for="{{resultArray}}" wx:for-index="index" wx:for-item="item" data-id='{{item.nub}}' data-ran='{{item.ran}}' data-array='{{resultArray}}'  data-index="{{index}}" >{{item.nub}}</text>
+    </view> 
+   </view> 
+  
+     <image class="widget__arrow" src="/image/dibu.png" mode="aspectFit"></image>
+      <view class="letf-btn-Group">
+    <view  bindtap="clickedBtn" data-name="{{index}}" class="item-btn-tow blue" wx:for="{{btnArray}}" wx:for-index="index" wx:for-item="item">{{item.title}}</view>
+    </view> 
+  </view>
+
+
