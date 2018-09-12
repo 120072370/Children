@@ -6,8 +6,7 @@ Page({
     avatarUrl: './user-unlogin.png',
     userInfo: {},
     logged: false,
-    takeSession: false,
-    requestResult: ''
+
     avataricon: '/image/zan.jpeg',
         routers: [
             {
