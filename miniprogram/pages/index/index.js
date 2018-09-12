@@ -8,6 +8,60 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: ''
+    avataricon: '/image/zan.jpeg',
+        routers: [
+            {
+                name: '加法练习',
+                url: '/pages/add/add',
+                icon: '/images/zan.jpeg',
+                codeID: '0'
+            },
+            {
+                name: '减法练习',
+                url: '/pages/reduction/reduction',
+                icon: '/images/zan.jpeg',
+                codeID: '1'
+            },
+            {
+                name: '乘法练习',
+                url: '/pages/take/take',
+                icon: '/images/zan.jpeg',
+                codeID: '2'
+            },
+            {
+                name: '除法练习(开发中)',
+                icon: '/images/zan.jpeg',
+                codeID: '3'
+            },
+            {
+                name: '加乘练习(开发中)',
+                url: '/pages/Course/course',
+                icon: '/images/zan.jpeg',
+                codeID: '4'
+            },
+            {
+                name: '减除练习(开发中)',
+                icon: '/images/zan.jpeg',
+                codeID: '5'
+            },
+            {
+                name: 'DouBai666',
+                url: '/pages/Course/course',
+                icon: '/images/zan.jpeg',
+                codeID: '6'
+            },
+            {
+                name: 'WX<合作联系>QQ',
+                icon: '/images/zan.jpeg',
+                codeID: '7'
+            },
+            {
+                name: '120072370',
+                url: '/pages/Course/course',
+                icon: '/images/zan.jpeg',
+                codeID: '8'
+            }
+        ]
 
   },
 
