@@ -1,17 +1,28 @@
 
   <!-- 用户 openid -->
-  <view class="userinfo">   
-
-<block wx:if="{{!logged}}">
-    <view  class="userinfo-avatar" style="background-image: url({{avatarUrl}})" ></view>
-    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-nicknameborder">点击获取图像昵称</button>
-</block>
-<block wx:else>
-   <image class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
-   <button class="userinfo-nickname">{{userInfo.nickName}}</button>
-</block>
-
+  <view class="userinfo" style="background-image: url({{bgUrl}})" >   
+  <block wx:if="{{!logged}}">
+      <view  class="userinfo-avatar" style="background-image: url({{avatarUrl}})" ></view>
+      <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-nicknameborder">点击获取图像昵称</button>
+  </block>
+  <block wx:else>
+     <image class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
+     <button class="userinfo-nickname">{{userInfo.nickName}}</button>
+  </block>
 </view>
+
+  
+   <view class="weui-gridstow">
+        <view class="weui-gridtow" wx:for="{{routerss}}" wx:key="name" wx:for-item="item" >
+                <view  bindtap="iconTap" data-code='{{item.codeID}}' data-url='{{item.url}}' data-name='{{item.name}}'  class='weui-grid__bg'>
+                    <view class="weui-grid__icon">
+                        <image src=" {{item.icon}}" mode="scaleToFill" />
+                    </view>
+                    <text class="weui-grid__label">{{item.name}}</text>
+                </view>
+        </view>
+    </view>
+
 
     <view class="weui-grids">
         <view class="weui-grid" wx:for="{{routers}}" wx:key="name" wx:for-item="item" >

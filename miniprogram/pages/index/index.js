@@ -4,9 +4,9 @@ const app = getApp()
 Page({
   data: {
     avatarUrl: './user-unlogin.png',
+    bgUrl:'/images/my_bg.png',
     userInfo: {},
     logged: false,
-
     avataricon: '/image/zan.jpeg',
         routers: [
             {
@@ -59,6 +59,27 @@ Page({
                 url: '/pages/Course/course',
                 icon: '/images/zan.jpeg',
                 codeID: '8'
+            }
+        ],
+
+        routerss: [
+            {
+                name: '我的记录',
+                url: '/pages/add/add',
+                icon: '/images/zan.jpeg',
+                codeID: '0'
+            },
+            {
+                name: '我的记录',
+                url: '/pages/reduction/reduction',
+                icon: '/images/zan.jpeg',
+                codeID: '1'
+            },
+            {
+                name: '我的记录',
+                url: '/pages/take/take',
+                icon: '/images/zan.jpeg',
+                codeID: '2'
             }
         ]
 
