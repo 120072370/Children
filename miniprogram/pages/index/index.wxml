@@ -4,11 +4,11 @@
 
 <block wx:if="{{!logged}}">
     <view  class="userinfo-avatar" style="background-image: url({{avatarUrl}})" ></view>
-    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-nickname">点击获取图像昵称</button>
+    <button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo" class="userinfo-nicknameborder">点击获取图像昵称</button>
 </block>
 <block wx:else>
    <image class="userinfo-avatar" src="{{avatarUrl}}" mode="cover"></image>
-   <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+   <button class="userinfo-nickname">{{userInfo.nickName}}</button>
 </block>
 
 </view>
