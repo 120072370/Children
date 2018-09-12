@@ -8,6 +8,7 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: ''
+
   },
 
   onLoad: function() {
@@ -45,6 +46,11 @@ Page({
       })
     }
   },
+
+
+
+
+
 
   onGetOpenid: function() {
     // 调用云函数

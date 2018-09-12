@@ -42,7 +42,7 @@
     </view> 
    </view> 
   
-     <image class="widget__arrow" src="/image/dibu.png" mode="aspectFit"></image>
+     <image class="widget__arrow" src="/images/dibu.png" mode="aspectFit"></image>
       <view class="letf-btn-Group">
     <view  bindtap="clickedBtn" data-name="{{index}}" class="item-btn-tow blue" wx:for="{{btnArray}}" wx:for-index="index" wx:for-item="item">{{item.title}}</view>
     </view> 
