@@ -6,7 +6,7 @@ Page({
     avatarUrl: './user-unlogin.png',
     bgUrl:'/images/my_bg.png',
     userInfo: {},
-    logged: false,
+    logged: true,
     avataricon: '/image/zan.jpeg',
         routers: [
             {
