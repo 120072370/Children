@@ -6,7 +6,7 @@ Page({
     avatarUrl: './user-unlogin.png',
     bgUrl:'/images/my_bg.png',
     userInfo: {},
-    logged: true,
+    logged: false,
     avataricon: '/image/zan.jpeg',
         routers: [
             {
@@ -122,10 +122,6 @@ Page({
   },
 
 
-
-
-
-
   onGetOpenid: function() {
     // 调用云函数
     wx.cloud.callFunction({
@@ -189,7 +185,6 @@ Page({
             wx.hideLoading()
           }
         })
-
       },
       fail: e => {
         console.error(e)
